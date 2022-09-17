@@ -1,13 +1,17 @@
 :root {
   --main-color: #ffffff;
   --second-color: #757575;
-  --main-font-size: 14px;
   --accent-color: #2196f3;
   --second-background-color: #2f303a;
+  --third-background-color: #f5f4fa;
+  --logo-color: #000000;
+  --main-font-size: 14px;
+  --second-font-size: 16px;
+  --bold-font-weight: 700;
+  --semibold-font-weight: 500;
 }
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: var(--main-font-size);
   color: #212121;
   background-color: var(--main-color);
@@ -38,13 +42,13 @@ body {
 }
 .header-logo {
   font-family: "Raleway";
-  font-weight: 700;
+  font-weight: var(--bold-font-weight);
   font-size: 26px;
   line-height: 1.19;
-  color: #000;
+  color: var(--logo-color);
 }
 .header-link {
-  font-weight: 500;
+  font-weight: var(--semibold-font-weight);
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: inherit;
@@ -65,7 +69,7 @@ body {
 }
 .hat-btn:hover,
 .hat-btn:focus {
-  color: #188ce8;
+  background-color: #188ce8;
 }
 .btn:focus,
 .btn:hover {
@@ -78,7 +82,7 @@ body {
 }
 .header-mail,
 .header-tel {
-  font-weight: 500;
+  font-weight: var(--semibold-font-weight);
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-color);
@@ -98,8 +102,8 @@ body {
   cursor: pointer;
   background-color: var(--accent-color);
   font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: var(--bold-font-weight);
+  font-size: var(--second-font-size);
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--main-color);
@@ -115,17 +119,19 @@ body {
 .features-item {
 }
 .features-subtitle {
-  font-weight: 700;
+  font-weight: var(--bold-font-weight);
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 .features-text {
+  font-weight: 400;
   line-height: 1.71;
   color: var(--second-color);
 }
 /* < -------------------------------    TASKS   ------------------- > */
 .tasks-title {
-  font-weight: 700;
+  font-weight: var(--bold-font-weight);
   font-size: 36px;
   line-height: 1.16;
 }
@@ -136,10 +142,10 @@ body {
 /* < -------------------------------    TEAM   ------------------- > */
 
 .team {
-  background: #f5f4fa;
+  background: var(--third-background-color);
 }
 .team-title {
-  font-weight: 700;
+  font-weight: var(--bold-font-weight);
   font-size: 36px;
   line-height: 1.16;
 }
@@ -148,12 +154,13 @@ body {
 .team-item {
 }
 .team-member {
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: var(--semibold-font-weight);
+  font-size: var(--second-font-size);
   line-height: 1.18;
 }
 .team-text {
-  font-size: 16px;
+  font-weight: 400;
+  font-size: var(--second-font-size);
   line-height: 1.18;
   color: var(--second-color);
 }
@@ -161,7 +168,7 @@ body {
 
 .footer-logo {
   font-family: "Raleway";
-  font-weight: 700;
+  font-weight: var(--bold-font-weight);
   font-size: 26px;
   line-height: 1.19;
   color: var(--main-color);
@@ -169,27 +176,32 @@ body {
 .footer {
   background-color: var(--second-background-color);
 }
+.footer-address {
+  font-style: normal;
+}
 .footer-list {
 }
 .footer-item {
 }
 .footer-maps {
-  font-style: normal;
+  font-weight: 400;
   line-height: 1.71;
   color: var(--main-color);
 }
 .footer-mail,
 .footer-tel {
+  font-weight: 400;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
 .btn {
   cursor: pointer;
-  background-color: #f5f4fa;
+  background-color: var(--third-background-color);
   font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: var(--semibold-font-weight);
+  font-size: var(--second-font-size);
   line-height: 1.62;
+  letter-spacing: inherit;
   color: inherit;
 }
 /* < -------------------------------    PORTFOLIO   ------------------- > */
@@ -198,13 +210,14 @@ body {
 .portfolio-item {
 }
 .portfolio-title {
-  font-weight: 700;
+  font-weight: var(--bold-font-weight);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .portfolio-text {
-  font-size: 16px;
+  font-weight: 400;
+  font-size: var(--second-font-size);
   line-height: 1.88;
   color: var(--second-color);
 }
